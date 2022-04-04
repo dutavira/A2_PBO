@@ -189,6 +189,7 @@ public class Main {
                 System.out.println("\n*================================*");
                 System.out.println("|           TERIMAKASIH          |");
                 System.out.println("*================================*\n");
+                System.exit(0);
             }
             default -> {
                 System.out.println("\n*================================*");
