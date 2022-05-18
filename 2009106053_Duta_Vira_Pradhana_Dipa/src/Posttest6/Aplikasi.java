@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Posttest5;
+package Posttest6;
 
+import Posttest5.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -13,7 +14,7 @@ import java.util.ArrayList;
  *
  * @author HP
  */
-public class Main {
+public class Aplikasi extends Main {
     static BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
     //membuat array list
     static ArrayList<Tiket_Pesawat> tiket = new ArrayList<>();
@@ -21,12 +22,7 @@ public class Main {
     static ArrayList<Bisnis> tiket_bisnis = new ArrayList<>();
     static int tanggal, harga, index;
     static String asal, tujuan, nama, lanjut;
-   
-    public static void main(String[] args) throws IOException { 
-        while (true){
-            menu();
-        }
-    }
+    
     
     static final void info(){ //final method
         System.out.println("*================================*");
@@ -490,6 +486,7 @@ public class Main {
         System.out.println("|   TEKAN ENTER UNTUK LANJUT     |");
         System.out.print("*================================*");
         lanjut = input.readLine();
+        menu();
     }
     
     //pilihan tiket
@@ -560,10 +557,7 @@ public class Main {
                
             }
             case 5 -> {
-                System.out.println("\n*================================*");
-                System.out.println("|           TERIMAKASIH          |");
-                System.out.println("*================================*\n");
-                System.exit(0);
+                
             }
             default -> {
                 System.out.println("\n*================================*");

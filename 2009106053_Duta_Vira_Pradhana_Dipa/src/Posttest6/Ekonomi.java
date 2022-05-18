@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Posttest5;
+package Posttest6;
+
+import Posttest5.*;
 
 /**
  *
@@ -63,10 +65,10 @@ final class Ekonomi extends Tiket_Pesawat { // final class
     
     //overloading
     public void overloading(int total_harga){
-        final int biaya_tambahE = 50000; //final atribut variabel
+        final int biaya_tambah = 50000; //final atribut variabel
         System.out.println("| Fasilitas Yang Didapat : " + this.fasilitas);
-        total_harga = this.harga + biaya_tambahE;
-        System.out.println("|\n| Biaya Tambahan : \n| \t\t" + biaya_tambahE + " Rupiah ");
+        total_harga = this.harga + biaya_tambah;
+        System.out.println("|\n| Biaya Tambahan : \n| \t\t" + biaya_tambah + " Rupiah ");
         System.out.println("| Total Biaya    : \n| \t\t" + total_harga + " Rupiah");
         System.out.println("*================================*\n");
                            
